@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0d13">
+  <title>Support — Totality</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./">TOTALITY</a>
+    <nav aria-label="Main navigation">
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>SUPPORT</h1>
+    <p>Something out of alignment? We're here to help.</p>
+
+    <section class="card">
+      <h2>Contact Support</h2>
+      <p>
+        Report a bug, ask a question, or share feedback.
+        If you're experiencing a gameplay issue, the
+        in-app Report an Issue feature can also attach
+        useful puzzle diagnostics.
+      </p>
+
+      <form action="https://formspree.io/f/xljgypbb" method="POST">
+        <input type="hidden" name="_subject"
+               value="Totality website support request">
+        <input type="hidden" name="source"
+               value="Totality Support Website">
+
+        <div hidden aria-hidden="true">
+          <label for="gotcha">Leave this blank</label>
+          <input id="gotcha" name="_gotcha" tabindex="-1">
+        </div>
+
+        <label for="category">Issue type</label>
+        <select id="category" name="category">
+          <option>Gameplay issue</option>
+          <option>Technical issue</option>
+          <option>Advertising or purchases</option>
+          <option>General question</option>
+          <option>Feedback</option>
+          <option>Privacy request</option>
+        </select>
+
+        <label for="email">Reply email (optional)</label>
+        <input id="email" type="email" name="email"
+               autocomplete="email">
+
+        <label for="message">How can we help?</label>
+        <textarea id="message" name="message"
+                  required minlength="12" maxlength="2000"></textarea>
+
+        <p>
+          Your message is processed through Formspree.
+          See our <a href="privacy.html">Privacy Policy</a>.
+        </p>
+
+        <button class="button" type="submit">SEND MESSAGE</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Frequently Asked Questions</h2>
+      <h3>Is Totality available yet?</h3>
+      <p>
+        Totality is currently in development for iPhone.
+      </p>
+      <h3>How do I report a broken puzzle?</h3>
+      <p>
+        Use the bug-report button in the game. Include
+        technical diagnostics when possible so we can
+        identify your puzzle configuration.
+      </p>
+      <h3>Will Totality require an account?</h3>
+      <p>
+        No account is planned for the initial release.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="./">Home</a> ·
+    <a href="privacy.html">Privacy</a> ·
+    <a href="terms.html">Terms</a>
+  </footer>
+</body>
+</html>
